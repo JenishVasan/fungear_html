@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FunGear</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <div class="container flex justify-between items-center">
+                <div class="top-bar-left flex items-center">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="phone-number">0460 670 954</span>
+                </div>
+                <div class="top-bar-center">
+                    <span class="welcome-text">Welcome to Fungear - We dare you to be different!</span>
+                </div>
+                <div class="top-bar-right flex items-center">
+                    <a href="mailto:sales@fungear.com.au" class="email-info flex items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>sales@fungear.com.au</span>
+                    </a>
+                    <div class="aus-owned flex items-center">
+                        <span class="aus-text">100% AUSTRALIAN<br>OWNED & OPERATED</span>
+                        <img src="https://flagcdn.com/w20/au.png" alt="Australian Flag" class="aus-flag">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Header -->
+        <div class="main-header">
+            <div class="container flex justify-between items-center">
+                <!-- Logo -->
+                <div class="logo-container">
+                    <a href="#">
+                        <img src="assets/Logo_1.png" alt="FunGear Logo" class="logo">
+                    </a>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <form action="#" class="search-form flex">
+                        <input type="text" placeholder="Search products..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right Actions -->
+                <div class="header-actions flex items-center">
+                    <a href="#" class="action-icon"><i class="fa-regular fa-user"></i></a>
+                    <a href="#" class="action-icon"><i class="fa-regular fa-heart"></i></a>
+                    <a href="#" class="action-icon cart-icon">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="cart-badge">0</span>
+                    </a>
+                    <div class="header-circle">
+                        <img src="assets/header_circle.png" alt="Australian Owned & Operated">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="container">
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="nav-links flex justify-center items-center">
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">VIDEOS</a></li>
+                    <li><a href="#">COLOURS</a></li>
+                    <li><a href="#">FAQS</a></li>
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">SIZE</a></li>
+                    <li><a href="#">STORIES</a></li>
+                    <li><a href="#">DESIGNS</a></li>
+                    <li><a href="#">SPECIAL OFFERS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background-image: url('assets/hero_img1.png');">
+            <!-- Navigation Arrows -->
+            <button class="slider-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider-arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="word-dare">DARE</span>
+                        <span class="word-tobe">TO BE</span>
+                        <span class="word-different">DIFFERENT!</span>
+                    </h1>
+                    <p class="hero-description">
+                        Bold prints. Big personality.<br>
+                        Everyday gear made for people<br>
+                        who refuse to blend in.
+                    </p>
+                    <div class="hero-buttons flex">
+                        <a href="#" class="btn btn-primary">SHOP FUNGEAR</a>
+                        <a href="#" class="btn btn-secondary">EXPLORE COLLECTIONS</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide Indicators -->
+            <div class="slider-indicators flex justify-center items-center">
+                <button class="indicator active" aria-label="Slide 1"></button>
+                <button class="indicator" aria-label="Slide 2"></button>
+                <button class="indicator" aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Bottom white gradient overlay to blend into the next section like the image -->
+            <div class="hero-bottom-gradient"></div>
+        </section>
+
+        <!-- New Arrivals Section -->
+        <section class="new-arrivals-section">
+            <div class="container">
+                <div class="section-box">
+                    <!-- Content Area -->
+                    <div class="new-arrivals-content flex items-stretch">
+
+                        <!-- Left Column: Header + Products -->
+                        <div class="products-column flex-1 flex flex-col">
+                            <!-- Header -->
+                            <div class="section-header flex justify-between items-center">
+                                <h2 class="section-title">NEW ARRIVALS</h2>
+                                <a href="#" class="view-all-link">VIEW ALL NEW ARRIVALS <i
+                                        class="fa-solid fa-arrow-right-long"></i></a>
+                            </div>
+
+                            <!-- Products Row -->
+                            <div class="products-row flex items-center relative">
+                                <!-- Carousel Arrow -->
+                                <button class="carousel-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+                                <!-- Product Grid -->
+                                <div class="products-grid flex">
+                                    <!-- Product 1 -->
+                                    <div class="product-card">
+                                        <div class="product-badge">NEW</div>
+                                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <div class="product-image flex justify-center items-center">
+                                            <img src="assets/new_arrival_1.png" alt="Gigi Giraffe Women's Polo">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">GIGI GIRAFFE WOMEN'S POLO</h3>
+                                            <div class="product-category">Women's Polo</div>
+                                            <div class="product-price">$51.00</div>
+                                            <div class="color-swatches flex">
+                                                <span class="swatch" style="background-color: #1a1a2e;"></span>
+                                                <span class="swatch" style="background-color: #1272cf;"></span>
+                                                <span class="swatch" style="background-color: #8b0000;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product 2 -->
+                                    <div class="product-card">
+                                        <div class="product-badge">NEW</div>
+                                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <div class="product-image flex justify-center items-center">
+                                            <img src="assets/new_arrival_2.png" alt="Buzz Bee Bibs">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">BUZZ BEE BIBS</h3>
+                                            <div class="product-category">bibs</div>
+                                            <div class="product-price">$9.99</div>
+                                            <div class="color-swatches flex">
+                                                <span class="swatch swatch-outline"
+                                                    style="background-color: #ffffff;"></span>
+                                                <span class="swatch" style="background-color: #ffd600;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product 3 -->
+                                    <div class="product-card">
+                                        <div class="product-badge">NEW</div>
+                                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <div class="product-image flex justify-center items-center">
+                                            <img src="assets/new_arrival_3.png"
+                                                alt="Gigi Giraffe Men's Short Sleeve Polo">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">GIGI GIRAFFE MEN'S SHORT SLEEVE POLO</h3>
+                                            <div class="product-category">Men's Polo</div>
+                                            <div class="product-price">$51.00</div>
+                                            <div class="color-swatches flex">
+                                                <span class="swatch" style="background-color: #1a1a2e;"></span>
+                                                <span class="swatch" style="background-color: #6a0dad;"></span>
+                                                <span class="swatch" style="background-color: #d2691e;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Product 4 -->
+                                    <div class="product-card">
+                                        <div class="product-badge">NEW</div>
+                                        <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></button>
+                                        <div class="product-image flex justify-center items-center">
+                                            <img src="assets/new_arrival_4.png" alt="Fussy Cow Bibs">
+                                        </div>
+                                        <div class="product-info">
+                                            <h3 class="product-title">FUSSY COW BIBS</h3>
+                                            <div class="product-category">bibs</div>
+                                            <div class="product-price">$9.99</div>
+                                            <div class="color-swatches flex">
+                                                <span class="swatch swatch-outline"
+                                                    style="background-color: #ffffff;"></span>
+                                                <span class="swatch" style="background-color: #ff8a80;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Right Column: Promo Banner -->
+                                <div class="promo-banner flex flex-col justify-center align-start">
+                                    <h3 class="promo-title">BACKPACKS</h3>
+                                    <p class="promo-subtitle">FROM ONLY</p>
+                                    <div class="promo-price">$29.95</div>
+                                    <a href="#" class="btn btn-yellow">SHOP SALE</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+        <section class="category-section">
+
+            <!-- SHOP BY THEME -->
+            <div class="category-group">
+                <div class="category-header">
+                    <h2>SHOP BY THEME</h2>
+                    <a href="#">VIEW ALL <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <div class="category-cards">
+
+                    <a href="#" class="category-card">
+                        <img src="assets/Australian_wildlife.png" alt="Australian Wildlife">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>AUSTRALIAN WILDLIFE</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <img src="assets/dizzie.png" alt="Dizzie Dingo">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>DIZZIE DINGO</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <img src="assets/playfull.png" alt="Playful Pussycat">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>PLAYFUL PUSSYCAT</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <img src="assets/birds.png" alt="Birds">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>BIRDS</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <img src="assets/ocean.png" alt="Ocean">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>OCEAN</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- SHOP BY PRODUCT -->
+            <div class="category-group">
+                <div class="category-header">
+                    <h2>SHOP BY PRODUCT</h2>
+                    <a href="#">VIEW ALL <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <div class="category-cards">
+
+                    <a href="#" class="category-card product-png-card"
+                        style="background: radial-gradient(circle, #2a3c75 0%, #101b3a 100%);">
+                        <img src="assets/polo_shirts.png" alt="Polo Shirts">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>POLO SHIRTS</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card product-png-card"
+                        style="background: radial-gradient(circle, #d81b60 0%, #5d0724 100%);">
+                        <img src="assets/hoodie.png" alt="Hoodies">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>HOODIES</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card product-png-card"
+                        style="background: radial-gradient(circle, #e65100 0%, #5e1d00 100%);">
+                        <img src="assets/t-shirts.png" alt="T-Shirts">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>T-SHIRTS</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                    <a href="#" class="category-card product-png-card"
+                        style="background: radial-gradient(circle, #6a1b9a 0%, #28063d 100%);">
+                        <img src="assets/crop_hoodies.png" alt="Crop Hoodies">
+                        <div class="card-overlay"></div>
+                        <div class="card-content">
+                            <span>CROP HOODIES</span>
+                            <i class="fa-solid fa-chevron-right card-action-icon"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Reviews Section -->
+        <section class="reviews-section">
+            <div class="container relative">
+                <!-- Header -->
+                <div class="section-header flex justify-between items-center">
+                    <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
+                    <a href="#" class="view-all-link">VIEW ALL REVIEWS <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Reviews Carousel -->
+                <div class="reviews-carousel-wrapper relative">
+                    <!-- Arrows -->
+                    <button class="carousel-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                    <div class="reviews-grid">
+                        <!-- Review 1 -->
+                        <div class="review-card">
+                            <div class="review-header flex items-center">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <div class="stars flex">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">Amazing quality and the prints are next level! Always get compliments
+                                when I wear Fungear.</p>
+                            <div class="review-author flex items-center">
+                                <img src="https://ui-avatars.com/api/?name=Jake+T&background=random" alt="Jake T."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <div class="author-name">Jake T.</div>
+                                    <div class="verified-buyer flex items-center">
+                                        Verified Buyer <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="review-card">
+                            <div class="review-header flex items-center">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <div class="stars flex">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">Super fast shipping and awesome customer service. Highly recommended!
+                            </p>
+                            <div class="review-author flex items-center">
+                                <img src="https://ui-avatars.com/api/?name=Sarah+M&background=random" alt="Sarah M."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <div class="author-name">Sarah M.</div>
+                                    <div class="verified-buyer flex items-center">
+                                        Verified Buyer <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 3 -->
+                        <div class="review-card">
+                            <div class="review-header flex items-center">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <div class="stars flex">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">The designs are so fun and unique. You can tell it's made with good
+                                quality.</p>
+                            <div class="review-author flex items-center">
+                                <img src="https://ui-avatars.com/api/?name=Liam+R&background=random" alt="Liam R."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <div class="author-name">Liam R.</div>
+                                    <div class="verified-buyer flex items-center">
+                                        Verified Buyer <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 4 -->
+                        <div class="review-card">
+                            <div class="review-header flex items-center">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <div class="stars flex">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">Love supporting an Aussie brand that's bold, bright and different!
+                            </p>
+                            <div class="review-author flex items-center">
+                                <img src="https://ui-avatars.com/api/?name=Megan+K&background=random" alt="Megan K."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <div class="author-name">Megan K.</div>
+                                    <div class="verified-buyer flex items-center">
+                                        Verified Buyer <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 5 -->
+                        <div class="review-card">
+                            <div class="review-header flex items-center">
+                                <i class="fa-solid fa-quote-left quote-icon"></i>
+                                <div class="stars flex">
+                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                        class="fa-solid fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="review-text">Bought a hoodie and it's now my go-to. Comfy, colorful and stands
+                                out!</p>
+                            <div class="review-author flex items-center">
+                                <img src="https://ui-avatars.com/api/?name=Daniel+P&background=random" alt="Daniel P."
+                                    class="author-avatar">
+                                <div class="author-info">
+                                    <div class="author-name">Daniel P.</div>
+                                    <div class="verified-buyer flex items-center">
+                                        Verified Buyer <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Share Your Idea Section -->
+        <section class="share-idea-section">
+            <div class="container">
+                <div class="share-idea-box flex justify-between items-center">
+
+                    <!-- Column 1: Info -->
+                    <div class="share-idea-info flex items-center">
+                        <div class="bulb-icon-container">
+                            <svg class="neon-bulb-svg" width="120" height="120" viewBox="0 0 160 160"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <!-- Outer Bulb Outline -->
+                                    <path
+                                        d="M80 29 C58 29 41 46 41 68 C41 82 48 92 57 101 C61 105 63 110 63 116 L97 116 C97 110 99 105 103 101 C112 92 119 82 119 68 C119 46 102 29 80 29 Z" />
+
+                                    <!-- Inner Left Glass Reflection -->
+                                    <path d="M53 58 C53 47 62 38 74 37" />
+
+                                    <!-- Filament Support Posts -->
+                                    <line x1="72" y1="116" x2="72" y2="82" />
+                                    <line x1="88" y1="116" x2="88" y2="82" />
+
+                                    <!-- Filament Double Loop (M-Shape) -->
+                                    <path
+                                        d="M72 82 C72 72 77 72 77 77 C77 82 80 82 80 82 C80 82 83 82 83 77 C83 72 88 72 88 82" />
+
+                                    <!-- Base Threads -->
+                                    <path d="M63 116 H97" />
+                                    <path d="M64 122 H96" />
+                                    <path d="M67 128 H93" />
+                                    <path d="M72 134 C72 137 75 139 80 139 C85 139 88 137 88 134" />
+
+                                    <!-- Light Rays (7 Rays radiating upwards/outwards) -->
+                                    <!-- Top -->
+                                    <path d="M80 18 V7" />
+                                    <!-- Top Left 1 -->
+                                    <path d="M54 26 L47 16" />
+                                    <!-- Top Left 2 -->
+                                    <path d="M34 47 L25 40" />
+                                    <!-- Left Horizontal -->
+                                    <path d="M26 68 H15" />
+                                    <!-- Top Right 1 -->
+                                    <path d="M106 26 L113 16" />
+                                    <!-- Top Right 2 -->
+                                    <path d="M126 47 L135 40" />
+                                    <!-- Right Horizontal -->
+                                    <path d="M134 68 H145" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="info-text">
+                            <h2 class="share-title">
+                                <span class="text-white">SHARE</span>
+                                <span class="text-pink">YOUR</span><br>
+                                <span class="text-blue">IDEA</span>
+                            </h2>
+                            <p class="share-desc">
+                                Got a design idea? Send it our way!<br>
+                                Our team will review it and get back<br>
+                                to you with a custom quote.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Upload -->
+                    <div class="share-idea-upload flex flex-col justify-center items-center">
+                        <span class="upload-label">Upload your design or mockup</span>
+                        <button class="btn btn-purple">CHOOSE FILE</button>
+                        <span class="upload-sub">or drag and drop</span>
+                    </div>
+
+                    <!-- Column 3: Form -->
+                    <div class="share-idea-form">
+                        <div class="form-row flex">
+                            <input type="text" placeholder="Your Name" class="form-input">
+                            <input type="email" placeholder="Your Email" class="form-input">
+                        </div>
+                        <div class="textarea-wrapper relative">
+                            <textarea placeholder="Tell us about your idea..." class="form-textarea"></textarea>
+                            <button class="btn btn-pink submit-btn">SUBMIT IDEA</button>
+                        </div>
+                        <p class="form-disclaimer">Our team will get back to you with a quote via email.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <div class="container relative">
+                <!-- Header -->
+                <div class="section-header flex justify-between items-center">
+                    <h2 class="section-title">MADE FOR EVERY MOMENT</h2>
+                    <a href="#" class="view-all-link">VIEW ALL <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Gallery Carousel Wrapper -->
+                <div class="gallery-carousel-wrapper relative">
+                    <!-- Arrows -->
+                    <button class="carousel-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="carousel-arrow next"><i class="fa-solid fa-chevron-right"></i></button>
+
+                    <!-- Gallery Grid -->
+                    <div class="gallery-grid">
+                        <!-- Card 1 -->
+                        <div class="gallery-card">
+                            <img src="assets/gallery_1.png" alt="Gallery Image 1" class="gallery-img">
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="gallery-card">
+                            <img src="assets/gallery_2.png" alt="Gallery Image 2" class="gallery-img">
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="gallery-card">
+                            <img src="assets/gallery_3.png" alt="Gallery Image 3" class="gallery-img">
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="gallery-card">
+                            <img src="assets/gallery_4.png" alt="Gallery Image 4" class="gallery-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section">
+            <div class="container flex justify-between items-center">
+
+                <!-- Left: Info -->
+                <div class="newsletter-info">
+                    <h2 class="newsletter-title">GET MORE FUN</h2>
+                    <p class="newsletter-desc">Be first to discover new designs, fresh drops, exclusive offers and
+                        Fungear inspiration.</p>
+                </div>
+
+                <!-- Middle: Form -->
+                <div class="newsletter-form-wrapper">
+                    <form class="newsletter-form flex">
+                        <input type="email" placeholder="Enter your email address" class="newsletter-input" required>
+                        <button type="submit" class="btn btn-pink newsletter-btn">JOIN THE FUN</button>
+                    </form>
+                </div>
+
+                <!-- Right: Neon Smiley Face -->
+                <div class="newsletter-icon-wrapper flex items-center justify-center">
+                    <div class="neon-smiley-container">
+                        <svg class="neon-smiley-svg" width="70" height="70" viewBox="0 0 100 100"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="50" cy="50" r="41" />
+                                <line x1="41" y1="36" x2="41" y2="48" />
+                                <line x1="59" y1="36" x2="59" y2="48" />
+                                <path d="M36 58 C36 73, 64 73, 64 58" />
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Column 1: Logo, Info, Socials -->
+                <div class="footer-col brand-col flex flex-row items-start">
+                    <img src="assets/Logo_1.png" alt="FunGear Logo" class="footer-logo">
+                    <div class="brand-details flex flex-col">
+                        <div class="footer-contact">
+                            <a href="tel:0460670954" class="contact-link">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>0460 670 954</span>
+                            </a>
+                            <a href="mailto:sales@fungear.com.au" class="contact-link">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>sales@fungear.com.au</span>
+                            </a>
+                        </div>
+                        <div class="social-links flex">
+                            <a href="#" class="social-icon" aria-label="Facebook"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon" aria-label="Instagram"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                            <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Shop -->
+                <div class="footer-col">
+                    <h3 class="footer-title">SHOP</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">All Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Clothing</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Home & Lifestyle</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Discover -->
+                <div class="footer-col">
+                    <h3 class="footer-title">DISCOVER</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Colours</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Designs</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Help -->
+                <div class="footer-col">
+                    <h3 class="footer-title">HELP</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns & Exchange</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 5: Follow -->
+                <div class="footer-col">
+                    <h3 class="footer-title">FOLLOW</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">YouTube</a></li>
+                        <li><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 6: Country Selector & Payments -->
+                <div class="footer-col right-col flex flex-col justify-between items-end">
+                    <div class="currency-selector flex items-center">
+                        <img src="https://flagcdn.com/w20/au.png" alt="Australia Flag" class="currency-flag">
+                        <span class="currency-text">Australia - AUD $</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+
+                    <div class="payment-methods flex">
+                        <div class="payment-icon visa" title="Visa"><i class="fa-brands fa-cc-visa"></i></div>
+                        <div class="payment-icon mastercard" title="Mastercard"><i
+                                class="fa-brands fa-cc-mastercard"></i></div>
+                        <div class="payment-icon amex" title="Amex"><i class="fa-brands fa-cc-amex"></i></div>
+                        <div class="payment-icon apple-pay" title="Apple Pay"><i class="fa-brands fa-apple-pay"></i>
+                        </div>
+                        <div class="payment-icon google-pay" title="Google Pay"><i class="fa-brands fa-google-pay"></i>
+                        </div>
+                        <div class="payment-icon zip-pay" title="Zip Pay"><span class="zip-text">zip</span></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom copyright bar -->
+            <div class="footer-bottom">
+                <p class="copyright">© 2024 Fungear Australia. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('mobile-active');
+                    const icon = menuToggle.querySelector('i');
+                    if (navLinks.classList.contains('mobile-active')) {
+                        icon.classList.remove('fa-bars');
+                        icon.classList.add('fa-xmark');
+                    } else {
+                        icon.classList.remove('fa-xmark');
+                        icon.classList.add('fa-bars');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
