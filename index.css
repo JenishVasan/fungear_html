@@ -1836,7 +1836,12 @@ ul {
         display: none;
     }
     .top-bar .container {
-        justify-content: flex-end;
+        justify-content: center;
+    }
+    .top-bar-right {
+        flex-direction: row;
+        align-items: center;
+        gap: 0.8rem;
     }
     
     .nav-links {
@@ -1859,10 +1864,11 @@ ul {
         display: block;
         background: none;
         border: none;
-        color: var(--clr-nav-text);
+        color: var(--clr-text-main);
         font-size: 1.5rem;
         cursor: pointer;
-        padding: 1rem;
+        padding: 0;
+        margin-right: 0.5rem;
     }
     
     .nav-bar .container {
@@ -1888,26 +1894,66 @@ ul {
 @media (max-width: 768px) {
     /* Main header adjustments */
     .main-header .container {
-        flex-wrap: wrap;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "menu logo cart"
+            "search search search";
+        gap: 1rem 0;
+        padding: 1rem;
     }
     
-    .search-container {
-        order: 3;
-        max-width: 100%;
-        width: 100%;
-        flex: 1 1 100%;
+    .mobile-menu-toggle {
+        grid-area: menu;
+        justify-self: start;
+        padding: 0;
         margin: 0;
-    }
-    
-    .header-actions {
-        order: 2;
-        margin-left: auto;
+        font-size: 1.8rem;
     }
     
     .logo-container {
-        order: 1;
-        flex: 0 0 150px;
+        grid-area: logo;
+        justify-self: center;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .logo {
+        max-height: 50px; /* Reduced slightly to fit better on small screens */
+    }
+    
+    .search-container {
+        grid-area: search;
+        margin: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .search-input {
+        padding: 0 1rem;
+        font-size: 0.95rem;
+    }
+    
+    .search-btn {
+        width: 50px;
+        font-size: 1.1rem;
+    }
+    
+    .header-actions {
+        grid-area: cart;
+        justify-self: end;
+        margin: 0;
+        gap: 0.5rem;
+    }
+    
+    .hide-mobile {
+        display: none !important;
+    }
+    
+    .header-circle {
+        display: none;
     }
 
     /* Hero section */
