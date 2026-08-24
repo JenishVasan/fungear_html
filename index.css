@@ -1961,4 +1961,11 @@ ul {
     .word-tobe {
         font-size: 2rem;
     }
+    
+    /* Footer payment methods */
+    .payment-methods {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
 }
