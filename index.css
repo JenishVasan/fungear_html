@@ -1791,6 +1791,9 @@ ul {
     }
     
     /* Reviews & Gallery */
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
     .reviews-grid {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1800,9 +1803,6 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .products-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
     .reviews-grid {
         grid-template-columns: 1fr;
     }
@@ -1953,6 +1953,21 @@ ul {
     .header-circle {
         display: none;
     }
+
+    /* New arrivals */
+    .products-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .promo-banner {
+        flex: auto;
+        min-height: 250px;
+        align-items: center;
+        text-align: center;
+        margin-top: 1.5rem;
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1973,21 +1988,6 @@ ul {
     
     .word-dare {
         margin-left: 0;
-    }
-    
-    /* New arrivals */
-    .products-row {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    
-    .promo-banner {
-        flex: auto;
-        min-height: 250px;
-        align-items: center;
-        text-align: center;
-        margin-top: 1.5rem;
-        width: 100%;
     }
     
     .category-card {
