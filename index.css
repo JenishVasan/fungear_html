@@ -1364,6 +1364,7 @@ ul {
     background-color: #9c17e8;
     color: #ffffff;
     padding: 1.2rem 0;
+    /* margin-top : */
 }
 
 .copyright {
@@ -1504,7 +1505,7 @@ ul {
     width: 100%;
     max-width: var(--container-max-width);
     margin: 0 auto;
-    padding: 4rem var(--container-padding);
+    padding: 0rem var(--container-padding);
 
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1570,7 +1571,7 @@ ul {
 
   flex: 1 1 0;
   min-width: 120px;
-  height: 158px;
+  height: 220px;
 
   overflow: hidden;
   border-radius: 8px;
