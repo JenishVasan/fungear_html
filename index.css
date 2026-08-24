@@ -1889,9 +1889,7 @@ ul {
         flex: 1 1 calc(33.333% - 1rem);
         min-width: 250px;
     }
-}
 
-@media (max-width: 768px) {
     /* Main header adjustments */
     .main-header .container {
         display: grid;
@@ -1921,7 +1919,7 @@ ul {
     }
     
     .logo {
-        max-height: 50px; /* Reduced slightly to fit better on small screens */
+        max-height: 50px;
     }
     
     .search-container {
@@ -1955,7 +1953,9 @@ ul {
     .header-circle {
         display: none;
     }
+}
 
+@media (max-width: 768px) {
     /* Hero section */
     .hero-buttons {
         flex-direction: column;
