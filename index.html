@@ -18,7 +18,6 @@
 </head>
 
 <body>
-
     <header class="header">
         <!-- Top Bar -->
         <div class="top-bar">
@@ -28,17 +27,13 @@
                     <span class="phone-number">0460 670 954</span>
                 </div>
                 <div class="top-bar-center">
-                    <span class="welcome-text">Welcome to Fungear - We dare you to be different!</span>
+                    <span class="welcome-text">Tracked Shipping on Every Order</span>
                 </div>
                 <div class="top-bar-right flex items-center">
                     <a href="mailto:sales@fungear.com.au" class="email-info flex items-center">
                         <i class="fa-solid fa-envelope"></i>
                         <span>sales@fungear.com.au</span>
                     </a>
-                    <div class="aus-owned flex items-center">
-                        <span class="aus-text">100% AUSTRALIAN<br>OWNED & OPERATED</span>
-                        <img src="https://flagcdn.com/w20/au.png" alt="Australian Flag" class="aus-flag">
-                    </div>
                 </div>
             </div>
         </div>
@@ -49,7 +44,8 @@
                 <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
                     <i class="fa-solid fa-bars"></i>
                 </button>
-                <!-- Logo -->
+
+                <!-- Logo Container -->
                 <div class="logo-container">
                     <a href="#">
                         <img src="assets/Logo_1.png" alt="FunGear Logo" class="logo">
@@ -59,20 +55,21 @@
                 <!-- Search Bar -->
                 <div class="search-container">
                     <form action="#" class="search-form flex">
-                        <input type="text" placeholder="Search products..." class="search-input">
+                        <input type="text" placeholder="Search" class="search-input">
                         <button type="submit" class="search-btn">
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </button>
                     </form>
                 </div>
 
+                <!-- Special Offers Gradient Pill Button -->
+                <a href="#" class="special-offers-pill-btn">Special Offers</a>
+
                 <!-- Right Actions -->
                 <div class="header-actions flex items-center">
                     <a href="#" class="action-icon hide-mobile"><i class="fa-regular fa-user"></i></a>
-                    <a href="#" class="action-icon hide-mobile"><i class="fa-regular fa-heart"></i></a>
                     <a href="#" class="action-icon cart-icon">
                         <i class="fa-solid fa-cart-shopping"></i>
-                        <span class="cart-badge">0</span>
                     </a>
                     <div class="header-circle">
                         <img src="assets/header_circle.png" alt="Australian Owned & Operated">
@@ -85,16 +82,16 @@
         <nav class="nav-bar">
             <div class="container">
                 <ul class="nav-links flex justify-center items-center">
-                    <li><a href="#" class="active">HOME</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">VIDEOS</a></li>
-                    <li><a href="#">COLOURS</a></li>
-                    <li><a href="#">FAQS</a></li>
-                    <li><a href="#">PRODUCTS</a></li>
-                    <li><a href="#">SIZE</a></li>
-                    <li><a href="#">STORIES</a></li>
-                    <li><a href="#">DESIGNS</a></li>
-                    <li><a href="#">SPECIAL OFFERS</a></li>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Colours</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Sizes</a></li>
+                    <li><a href="#">Stories</a></li>
+                    <li><a href="#">Designs</a></li>
+                    <li><a href="#">Special Offers</a></li>
                 </ul>
             </div>
         </nav>
@@ -170,7 +167,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h3 class="product-title">GIGI GIRAFFE WOMEN'S POLO</h3>
-                                            <div class="product-category">Women's Polo</div>
+                                            <div class="product-category"></div>
                                             <div class="product-price">$51.00</div>
                                             <div class="color-swatches flex">
                                                 <span class="swatch" style="background-color: #1a1a2e;"></span>
@@ -189,7 +186,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h3 class="product-title">BUZZ BEE BIBS</h3>
-                                            <div class="product-category">bibs</div>
+                                            <div class="product-category"></div>
                                             <div class="product-price">$9.99</div>
                                             <div class="color-swatches flex">
                                                 <span class="swatch swatch-outline"
@@ -209,7 +206,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h3 class="product-title">GIGI GIRAFFE MEN'S SHORT SLEEVE POLO</h3>
-                                            <div class="product-category">Men's Polo</div>
+                                            <div class="product-category"></div>
                                             <div class="product-price">$51.00</div>
                                             <div class="color-swatches flex">
                                                 <span class="swatch" style="background-color: #1a1a2e;"></span>
@@ -228,7 +225,7 @@
                                         </div>
                                         <div class="product-info">
                                             <h3 class="product-title">FUSSY COW BIBS</h3>
-                                            <div class="product-category">bibs</div>
+                                            <div class="product-category"></div>
                                             <div class="product-price">$9.99</div>
                                             <div class="color-swatches flex">
                                                 <span class="swatch swatch-outline"
@@ -308,7 +305,6 @@
 
                 </div>
             </div>
-
 
             <!-- SHOP BY PRODUCT -->
             <div class="category-group">
@@ -602,34 +598,38 @@
                     <a href="#" class="view-all-link">VIEW ALL <i class="fa-solid fa-arrow-right-long"></i></a>
                 </div>
 
-                <!-- Gallery Carousel Wrapper -->
-                <div class="gallery-carousel-wrapper relative">
-                    <!-- Arrows -->
-                    <button class="carousel-arrow prev"><i class="fa-solid fa-chevron-left"></i></button>
-                    <button class="carousel-arrow next"><i class="fa-solid fa-chevron-right"></i></button>
-
-                    <!-- Gallery Grid -->
-                    <div class="gallery-grid">
-                        <!-- Card 1 -->
-                        <div class="gallery-card">
-                            <img src="assets/gallery_1.png" alt="Gallery Image 1" class="gallery-img">
-                        </div>
-
-                        <!-- Card 2 -->
-                        <div class="gallery-card">
-                            <img src="assets/gallery_2.png" alt="Gallery Image 2" class="gallery-img">
-                        </div>
-
-                        <!-- Card 3 -->
-                        <div class="gallery-card">
-                            <img src="assets/gallery_3.png" alt="Gallery Image 3" class="gallery-img">
-                        </div>
-
-                        <!-- Card 4 -->
-                        <div class="gallery-card">
-                            <img src="assets/gallery_4.png" alt="Gallery Image 4" class="gallery-img">
-                        </div>
+                <!-- Gallery Grid -->
+                <div class="gallery-grid">
+                    <!-- Row 1 -->
+                    <div class="gallery-card"><img src="assets/gallery_1.png" alt="Gallery Image 1" class="gallery-img">
                     </div>
+                    <div class="gallery-card"><img src="assets/gallery_2.png" alt="Gallery Image 2" class="gallery-img">
+                    </div>
+                    <div class="gallery-card"><img src="assets/gallery_3.png" alt="Gallery Image 3" class="gallery-img">
+                    </div>
+                    <div class="gallery-card"><img src="assets/gallery_4.png" alt="Gallery Image 4" class="gallery-img">
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="gallery-card"><img src="assets/gallery_55.png" alt="Gallery Image 5"
+                            class="gallery-img">
+                    </div>
+                    <div class="gallery-card"><img src="assets/gallery_6.png" alt="Gallery Image 6" class="gallery-img">
+                    </div>
+                    <div class="gallery-card"><img src="assets/gallery_7.png" alt="Gallery Image 7" class="gallery-img">
+                    </div>
+                    <div class="gallery-card"><img src="assets/gallery_8.png" alt="Gallery Image 8" class="gallery-img">
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="gallery-card"><img src="assets/gallery_9.png" alt="Gallery Image 9" class="gallery-img">
+                    </div>
+                    <div class="gallery-card"><img src="assets/gallery_10.png" alt="Gallery Image 10"
+                            class="gallery-img"></div>
+                    <div class="gallery-card"><img src="assets/gallery_11.png" alt="Gallery Image 11"
+                            class="gallery-img"></div>
+                    <div class="gallery-card"><img src="assets/gallery_12.png" alt="Gallery Image 12"
+                            class="gallery-img"></div>
                 </div>
             </div>
         </section>
@@ -676,109 +676,73 @@
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-
-                <!-- Column 1: Logo, Info, Socials -->
-                <div class="footer-col brand-col flex flex-row items-start">
+        <div class="footer-main">
+            <div class="container flex justify-between items-end relative">
+                
+                <!-- Left: Logo -->
+                <div class="footer-logo-col">
                     <img src="assets/Logo_1.png" alt="FunGear Logo" class="footer-logo">
-                    <div class="brand-details flex flex-col">
-                        <div class="footer-contact">
-                            <a href="tel:0460670954" class="contact-link">
-                                <i class="fa-solid fa-phone"></i>
-                                <span>0460 670 954</span>
-                            </a>
-                            <a href="mailto:sales@fungear.com.au" class="contact-link">
-                                <i class="fa-solid fa-envelope"></i>
-                                <span>sales@fungear.com.au</span>
-                            </a>
-                        </div>
-                        <div class="social-links flex">
-                            <a href="#" class="social-icon" aria-label="Facebook"><i
-                                    class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#" class="social-icon" aria-label="Instagram"><i
-                                    class="fa-brands fa-instagram"></i></a>
-                            <a href="#" class="social-icon" aria-label="YouTube"><i
-                                    class="fa-brands fa-youtube"></i></a>
-                            <a href="#" class="social-icon" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
-                        </div>
-                    </div>
                 </div>
 
-                <!-- Column 2: Shop -->
-                <div class="footer-col">
-                    <h3 class="footer-title">SHOP</h3>
+                <!-- Middle Left: Quick Links -->
+                <div class="footer-links-col">
+                    <h3 class="footer-title">Quick Links</h3>
                     <ul class="footer-links">
-                        <li><a href="#">All Products</a></li>
-                        <li><a href="#">New Arrivals</a></li>
-                        <li><a href="#">Best Sellers</a></li>
-                        <li><a href="#">Clothing</a></li>
-                        <li><a href="#">Accessories</a></li>
-                        <li><a href="#">Home & Lifestyle</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 3: Discover -->
-                <div class="footer-col">
-                    <h3 class="footer-title">DISCOVER</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">Colours</a></li>
-                        <li><a href="#">Gallery</a></li>
-                        <li><a href="#">Stories</a></li>
-                        <li><a href="#">Designs</a></li>
-                        <li><a href="#">Size Guide</a></li>
-                    </ul>
-                </div>
-
-                <!-- Column 4: Help -->
-                <div class="footer-col">
-                    <h3 class="footer-title">HELP</h3>
-                    <ul class="footer-links">
-                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
                         <li><a href="#">Contact</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#">Returns & Exchange</a></li>
-                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Colours</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Sizes</a></li>
+                        <li><a href="#">Themes</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 5: Follow -->
-                <div class="footer-col">
-                    <h3 class="footer-title">FOLLOW</h3>
+                <!-- Middle Right: Policies -->
+                <div class="footer-links-col">
+                    <h3 class="footer-title">Policies</h3>
                     <ul class="footer-links">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">YouTube</a></li>
-                        <li><a href="#">TikTok</a></li>
+                        <li><a href="#">Return & Exchange</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms Of Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
                     </ul>
-                </div>
-
-                <!-- Column 6: Country Selector & Payments -->
-                <div class="footer-col right-col flex flex-col justify-between items-end">
-                    <div class="currency-selector flex items-center">
-                        <img src="https://flagcdn.com/w20/au.png" alt="Australia Flag" class="currency-flag">
-                        <span class="currency-text">Australia - AUD $</span>
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </div>
-
-                    <div class="payment-methods flex">
-                        <div class="payment-icon visa" title="Visa"><i class="fa-brands fa-cc-visa"></i></div>
-                        <div class="payment-icon mastercard" title="Mastercard"><i
-                                class="fa-brands fa-cc-mastercard"></i></div>
-                        <div class="payment-icon amex" title="Amex"><i class="fa-brands fa-cc-amex"></i></div>
-                        <div class="payment-icon apple-pay" title="Apple Pay"><i class="fa-brands fa-apple-pay"></i>
-                        </div>
-                        <div class="payment-icon google-pay" title="Google Pay"><i class="fa-brands fa-google-pay"></i>
-                        </div>
-                        <div class="payment-icon zip-pay" title="Zip Pay"><span class="zip-text">zip</span></div>
+                    <div class="footer-socials flex">
+                        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
 
+                <!-- Right: Image -->
+                <div class="footer-image-col">
+                    <img src="assets/footer_img.png" alt="Happy shopper" class="footer-shopper-img">
+                </div>
+
+                <!-- Far Right: Back to top -->
+                <div class="footer-totop">
+                    <button class="totop-btn" aria-label="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})"><i class="fa-solid fa-arrow-up"></i></button>
+                </div>
             </div>
+        </div>
 
-            <!-- Bottom copyright bar -->
-            <div class="footer-bottom">
-                <p class="copyright">© 2024 Fungear Australia. All Rights Reserved.</p>
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <div class="container flex justify-between items-center">
+                <p class="copyright">COPYRIGHT © 2026, FUNGEAR.COM.AU ALL RIGHTS RESERVED.</p>
+                
+                <div class="payment-methods flex items-center">
+                    <span class="payment-text">Flexible Secure Payment Options</span>
+                    <div class="payment-icons flex">
+                        <div class="payment-icon amex" title="Amex"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" alt="Amex"></div>
+                        <div class="payment-icon mastercard" title="Mastercard"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="Mastercard"></div>
+                        <div class="payment-icon paypal" title="PayPal"><i class="fa-brands fa-paypal"></i></div>
+                        <div class="payment-icon visa" title="Visa"><img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa"></div>
+                        <div class="payment-icon afterpay" title="Afterpay"><img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Afterpay_logo.png" alt="Afterpay"></div>
+                        <div class="payment-icon zip" title="Zip"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Zip_Logo.png" alt="Zip"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
