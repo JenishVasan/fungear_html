@@ -403,7 +403,7 @@ ul {
 }
 
 .word-tobe {
-    color: #000000;
+    color: #fff;
     font-size: clamp(1.5rem, 3vw + 0.5rem, 2.5rem);
     display: block;
     margin-left: 20px;
@@ -418,7 +418,7 @@ ul {
 .hero-description {
     font-size: 0.95rem;
     font-weight: 700;
-    color: #1a1b4b;
+    color: #fff;
     /* Dark navy */
     margin-bottom: 1.5rem;
     line-height: 1.4;
